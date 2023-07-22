@@ -345,7 +345,7 @@ section {
     height: 5px;
     background-color: #000000;
     animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
+    transform: scaleX(1);
     transform-origin: left;
 }                                 
 @keyframes animate {                   
@@ -354,21 +354,22 @@ section {
     }                                                                    
 }
 
-.technical-bars .bar .progress-line span {
+.progress-line span {
     height: 100%;
     background-color: #0ef;
     position: absolute;
     border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    width: 100%;
+    /* animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: left; */
 }
 
-.progress-line .html span{
+.progress-line.html span{
     width: 90%;
 }
 
-.progress-line .css span{
+.progress-line.css span{
     width: 70%;
 }
 
